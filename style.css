@@ -52,12 +52,17 @@ ul {
   border-radius: 5px;
 }
 
+.banner {
+  width: 100%;
+  text-align: center;
+  background: #fff;
+}
+
 .banner img {
   width: 100%;
-  height: auto;
+  height: auto;         /* Preserve aspect ratio */
+  max-width: 100%;
   display: block;
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
+  margin: 0 auto;
 }
 
