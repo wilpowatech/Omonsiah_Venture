@@ -1,0 +1,55 @@
+css_content = """
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+header {
+  background: #026476;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background: #01434f;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+  background: #026476;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+ul {
+  padding-left: 20px;
+}
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery img {
+  width: 300px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+"""
