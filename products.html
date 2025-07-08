@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omonsiah Continental Venture - Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      background: #fff;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    }
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Omonsiah Continental Venture</h1>
+    <p>Complete Range of Medical Equipment for Health Institutions</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">About</a>
+    <a href="products.html">Products</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="assets/images/bed.jpg" alt="Hospital Bed">
+        <h3>Adjustable Hospital Bed</h3>
+        <p>Durable bed with side rails and wheels.</p>
+      </div>
+      <div class="product">
+        <img src="assets/images/lab.jpg" alt="Laboratory Equipment">
+        <h3>Laboratory Equipment Set</h3>
+        <p>Includes microscope, test tubes, centrifuge, and more.</p>
+      </div>
+      <div class="product">
+        <img src="assets/images/surgical.jpg" alt="Surgical Instruments">
+        <h3>Surgical Instruments</h3>
+        <p>Sterile stainless steel instruments on a surgical tray.</p>
+      </div>
+      <div class="product">
+        <img src="assets/images/furniture.jpg" alt="Hospital Furniture">
+        <h3>Hospital Furniture</h3>
+        <p>Overbed tables, patient chairs, IV stands, and storage units.</p>
+      </div>
+      <div class="product">
+        <img src="assets/images/supplies.jpg" alt="Protective Medical Supplies">
+        <h3>Protective Medical Supplies</h3>
+        <p>Gloves, face masks, gowns, and face shields.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Omonsiah Continental Venture. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
