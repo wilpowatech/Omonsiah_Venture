@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- GOOGLE FONT  -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+<!-- FONT AWESOME  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- MY EXTERNAL CSS  -->
+<title>Omonsiah Continental Venture | Services</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="cart.js"></script>
+</head>
+
+<body id="body" class="">
+<!-- Navigation Bar -->
+<div class="topnav">
+  <div class="topnav-right">
+    <a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="services.html" class="active"><i class="fa fa-fw fa-cogs"></i> Our Services</a>
+    <a href="about.html"><i class="fa fa-fw fa-info-circle"></i>About Us</a>
+    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+    <a href="cart.html"><i class="fa fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+  </div>
+</div>
+
+<!-- Logo Section -->
+<div class="logo-container">
+  <img src="assets/images/banner.png" alt="Full Width Logo" class="full-width-logo">
+  <img src="assets/images/Caduceus symbol.png" alt="Caduceus icon" class="caduceus-icon">
+</div>
+
+<h2 style="text-align:center">Order Medical Equipment</h2>
+
+<section class="services-grid">
+  <div class="service-card">
+    <img src="assets/images/bed.jpeg" alt="Adjustable Bed">
+    <h3>Adjustable Bed</h3>
+    <p>High-quality adjustable hospital bed.</p>
+    <div class="qty-controls">
+      <button onclick="updateQty('bed', -1)">-</button>
+      <span id="qty-bed">0</span>
+      <button onclick="updateQty('bed', 1)">+</button>
+    </div>
+  </div>
+
+  <div class="service-card">
+    <img src="assets/images/lab.jpeg" alt="Lab Centrifuge">
+    <h3>Lab Centrifuge</h3>
+    <p>Efficient centrifuge for lab use.</p>
+    <div class="qty-controls">
+      <button onclick="updateQty('centrifuge', -1)">-</button>
+      <span id="qty-centrifuge">0</span>
+      <button onclick="updateQty('centrifuge', 1)">+</button>
+    </div>
+  </div>
+  <!-- Add more products as needed -->
+</section>
+
+<!-- Order Form -->
+<section class="form-container">
+  <h2>Complete Your Order</h2>
+  <form id="order-form" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
+    <div class="form-group">
+      <label for="client-name">Full Name</label>
+      <input type="text" name="client-name" required>
+    </div>
+    <div class="form-group">
+      <label for="client-phone">Phone Number</label>
+      <input type="tel" name="client-phone" required>
+    </div>
+    <div class="form-group">
+      <label for="client-address">Address</label>
+      <textarea name="client-address" required></textarea>
+    </div>
+    <input type="hidden" name="order-details" id="order-details" value="">
+    <button type="submit" onclick="prepareOrder()">Submit Order</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Omonsiah Continental Venture. All rights reserved.</p>
+  <div class="contact-links">
+    <a href="tel:+2348060074414" title="Call Pharm. Isaiah Omoike">
+      <i class="fa-solid fa-phone" style="color: antiquewhite;"></i> Call
+    </a>
+    <a href="mailto:omo" title="Send Email">
+      <i class="fa-solid fa-envelope" style="color: #720E9E;"></i> Email
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=2348060074414" title="Chat on WhatsApp" target="_blank">
+      <i class="fa-brands fa-whatsapp" style="color: #25D366;"></i> WhatsApp
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>

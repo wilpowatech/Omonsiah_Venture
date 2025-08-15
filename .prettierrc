@@ -1,0 +1,11 @@
+{
+  "singleQuote": true,        // Use single quotes instead of double quotes
+  "semi": false,              // Omit semicolons
+  "tabWidth": 2,               // Use 2 spaces per tab
+  "trailingComma": "es5",     // Add trailing commas where valid in ES5 (objects, arrays, etc.)
+  "bracketSpacing": true,     // Space inside object brackets: { foo: bar }
+  "arrowParens": "always",    // Always include parentheses around arrow function params
+  "endOfLine": "lf",          // Use LF (Unix-style) line endings
+  "printWidth": 100           // Wrap lines that exceed 100 characters
+}
+
