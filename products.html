@@ -20,7 +20,7 @@
     <title>Omonsiah Continental Venture | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="body" class="">   
+<body id="products-page">   
     <!-- Navigation Bar -->
     <div class="topnav">
         <div class="topnav-right">
@@ -32,262 +32,18 @@
     
     <!-- Logo Section -->
      <div class="logo-container">
-      <img src="assets/images/banner.png" alt="Full Width Logo" class="full-width-logo">
+      <img src="assets/images/banner3.png" alt="Full Width Logo" class="full-width-logo">
       <img src="assets/images/Caduceus symbol.png" alt="Caduceus icon" class="caduceus-icon">
     </div>
-      <section id="about">
+    <div class="about-to-footer-bg">
+ <section id="about" class="about-highlight">
     <h2>Our Services</h2>
     <p>
       <strong>Trusted Medical Equipment Suppliers to Primary, Secondary, and Tertiary Healthcare Centres Across Nigeria</strong>
     </p>
 
   </section>
-  <style>
 
-/* Product grid */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-/* Product card */
-.product-card {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border: 3px solid #3399ff;
-  border-radius: 14px;
-  background: #f8fbff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
-  box-sizing: border-box;
-  height: 500px; /* adjusted height */
-  transition: all 0.3s ease-in-out;
-}
-
-/* Glow on hover */
-.product-card:hover {
-  border-color: #004080;
-  box-shadow: 0 0 20px #3399ff;
-  transform: scale(1.02);
-}
-
-/* Image container */
-.product-card .img-wrap {
-  flex-shrink: 0;
-  width: calc(100% - 2px); /* 1px gap each side */
-  height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f8ff;
-  border-radius: 10px 10px 0 0;
-  overflow: hidden;
-  margin: 1px 1px 10px 1px; /* small top/sides, space below for text */
-}
-
-.product-card .img-wrap img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-/* Product name */
-.product-card h4 {
-  margin: 5px 0;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #00274d;
-}
-
-/* Description with light blue bullets */
-.product-card p {
-  font-size: 0.95rem;
-  color: #333;
-  text-align: left;
-  margin: 4px 0;
-  position: relative;
-  padding-left: 16px;
-}
-
-.product-card p::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #66b3ff;
-  font-weight: bold;
-}
-
-/* Quantity and button row */
-.qty-row {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-top: auto; /* pushes it to bottom */
-  padding-top: 10px;
-}
-
-.qty-row input {
-  width: 60px;
-  padding: 6px 8px;
-}
-
-.btn {
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 12px;
-}
-
-.btn-primary {
-  background: #0f62fe;
-  color: #fff;
-}
-
-.btn-outline {
-  background: #fff;
-  border: 1px solid #0f62fe;
-  color: #0f62fe;
-}
-      .cart-drawer {
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 380px;
-        max-width: 95vw;
-        height: 100dvh;
-        background: #fff;
-        border-left: 1px solid #eee;
-        box-shadow: -8px 0 18px rgba(0, 0, 0, 0.06);
-        transform: translateX(100%);
-        transition: 0.3s;
-        padding: 18px;
-        overflow: auto;
-        z-index: 9999;
-      }
-      .cart-open .cart-drawer {
-        transform: translateX(0);
-      }
-      .cart-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10px;
-      }
-      .cart-items {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 10px 0;
-      }
-      .cart-item {
-        display: flex;
-        justify-content: space-between;
-        gap: 8px;
-        border-bottom: 1px dashed #eee;
-        padding-bottom: 8px;
-      }
-      .totals {
-        display: flex;
-        justify-content: space-between;
-        border-top: 1px solid #eee;
-        padding-top: 10px;
-        margin-top: 10px;
-      }
-      .checkout-form {
-        display: grid;
-        gap: 10px;
-        margin-top: 12px;
-      }
-      .checkout-form input,
-      .checkout-form textarea {
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        width: 100%;
-      }
-      .fab-cart {
-        position: fixed;
-        right: 16px;
-        bottom: 16px;
-        background: #0f62fe;
-        color: #fff;
-        border-radius: 50%;
-        width: 56px;
-        height: 56px;
-        display: grid;
-        place-items: center;
-        font-size: 22px;
-        box-shadow: 0 6px 16px rgba(15, 98, 254, 0.3);
-        z-index: 9998;
-      }
-      .badge {
-        position: absolute;
-        right: -6px;
-        top: -6px;
-        background: #ff3b30;
-        color: #fff;
-        border-radius: 999px;
-        min-width: 20px;
-        height: 20px;
-        display: grid;
-        place-items: center;
-        font-size: 12px;
-      }
-      .price {
-        font-weight: 600;
-      }
-      header {
-        position: sticky;
-        top: 0;
-        background: #fff;
-        border-bottom: 1px solid #eee;
-        padding: 10px;
-        z-index: 1000;
-      }
-      /* Existing styles above... */
-
-/* Responsive adjustments for mobile */
-@media (max-width: 768px) {
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 products per row on tablets */
-    gap: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .products-grid {
-    grid-template-columns: 1fr; /* 1 product per row on phones */
-    gap: 10px;
-  }
-
-  .product-card {
-    height: auto; /* Let height adjust naturally on small screens */
-    padding: 10px;
-  }
-
-  .product-card h4 {
-    font-size: 1.2em; /* Slightly smaller title for mobile */
-  }
-
-  .product-card p {
-    font-size: 0.85em; /* Adjust text for readability */
-  }
-
-  .qty-row {
-    flex-direction: column; /* Stack quantity and button on mobile */
-    gap: 6px;
-  }
-
-  .qty-row input {
-    width: 100%;
-  }
-}
-
-</style>
 
     <!-- PRODUCTS -->
     <main class="container">
@@ -378,4 +134,5 @@
         </a>
       </div>
     </footer>
+    </div>
 </html>

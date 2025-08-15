@@ -186,6 +186,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+  margin-top: auto;
 }
 
 .hero-header {
@@ -426,12 +427,12 @@ footer {
 .about-container h2 {
   text-align: center;
   font-size: 3rem; /* bigger */
-  color: #00f; /* main glow color */
+  color: rgb(255, 0, 0); /* main glow color */
   text-shadow: 
-    0 0 5px #00f,
-    0 0 10px #00f,
-    0 0 20px #00f,
-    0 0 40px #00f;
+    0 0 5px rgb(255, 38, 0),
+    0 0 10px rgb(81, 255, 0),
+    0 0 20px rgb(245, 2, 233),
+    0 0 40px rgb(251, 255, 0);
   animation: glow 2s ease-in-out infinite alternate;
 }
 
@@ -589,7 +590,7 @@ button:hover {
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 .gallery-container {
@@ -794,7 +795,7 @@ nav a.active {
 }
 /* Background from About to Footer */
 .about-to-footer-bg {
-  background: url('assets/images/background2.jpg') no-repeat center center;
+  background: url('assets/images/bg1.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed; /* optional parallax effect */
   min-height: 100vh; /* fills the viewport height */
@@ -1013,3 +1014,74 @@ nav a.active {
   100% { transform: translate(-25%, -25%); }
 }
 
+/* ===== PRODUCTS PAGE ONLY ===== */
+#products-page .products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+#products-page .product-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 3px solid #3399ff;
+  border-radius: 14px;
+  background: #f8fbff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  height: 500px;
+  transition: all 0.3s ease-in-out;
+}
+
+#products-page .product-card:hover {
+  border-color: #004080;
+  box-shadow: 0 0 20px #3399ff;
+  transform: scale(1.02);
+}
+
+#products-page .product-card .img-wrap {
+  flex-shrink: 0;
+  width: calc(100% - 2px);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f8ff;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  margin: 1px 1px 10px 1px;
+}
+
+#products-page .product-card .img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#products-page .product-card h4 {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00274d;
+}
+
+#products-page .product-card p {
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+  margin: 4px 0;
+  position: relative;
+  padding-left: 16px;
+}
+
+#products-page .product-card p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #66b3ff;
+  font-weight: bold;
+}
