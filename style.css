@@ -1182,11 +1182,11 @@ nav a.active {
 
 /* Phones */
 @media (max-width: 768px) {
-  #products-page .products-grid {
+  #products-page.products-grid {
     grid-template-columns: 1fr;
   }
 
-  #products-page .product-card {
+  #products-page.product-card {
     height: auto;
   }
 
